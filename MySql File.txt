@@ -1,0 +1,22 @@
+create database busresv;
+use busresv;
+create table bus(
+ id int primary key,
+ ac boolean,
+ capacity int , 
+ driver_name varchar(30)
+);
+
+insert into bus values (1,1,2 , "Justin");
+insert into bus values (2,1,48,"Manikandan");
+insert into bus values (3,0,52 ,"Kamal");
+
+
+create table booking ( 
+booking_Id varchar(30),
+passenger_name varchar(30),
+bus_no int ,
+froms varchar(50),
+destination varchar(50),
+travel_date date
+);
